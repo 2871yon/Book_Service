@@ -1,0 +1,46 @@
+###
+POST http://localhost:8080/api/Ingredient
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "lemon",
+  "pricePerUnit": 3
+}
+###
+PUT http://localhost:8080/api/Ingredient/5
+Content-Type: application/json
+###
+DELETE http://localhost:8080/api/Ingredient/8
+
+###
+GET http://localhost:8080/api/Ingredient/3
+###
+GET http://localhost:8080/api/recipes
+
+###
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "coffe with milk",
+  "instruction": "add woter to coffe than add milk",
+  "ingredients": [
+    {
+      "id": 0,
+      "name": "coffe asetent",
+      "pricePerUnit":20
+    },
+    {
+      "id": 0,
+      "name": "milk 2L",
+      "pricePerUnit":12
+    }
+  ]
+}
+###
+GET http://localhost:8080/api/recipes/2
+###
+DELETE http://localhost:8080/api/recipes/8
+
